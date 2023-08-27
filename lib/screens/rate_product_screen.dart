@@ -1,3 +1,4 @@
+import 'package:camp_code_project/widgets/appbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -22,20 +23,20 @@ class _rateProductScreenState extends State<rateProductScreen> {
            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 20,),
-
-              Row(
-                children: [
-
-                  Image.asset("assets/icons/Frame 361.png"),
-                  SizedBox(width: 30,),
-                  Text("Share your feedback",style: TextStyle(
-                    color: Color(0xff1D1F22),
-                    fontSize: 18,
-                    // fontWeight: FontWeight.w500,
-                    fontFamily: 'Product Sans'
-                  ),)
-                ],
-              ),
+                appbar(title: 'Share your feedback'),
+              // Row(
+              //   children: [
+              //
+              //     Image.asset("assets/icons/Frame 361.png"),
+              //     SizedBox(width: 30,),
+              //     Text("Share your feedback",style: TextStyle(
+              //       color: Color(0xff1D1F22),
+              //       fontSize: 18,
+              //       // fontWeight: FontWeight.w500,
+              //       fontFamily: 'Product Sans'
+              //     ),)
+              //   ],
+              // ),
               SizedBox(height: 20,),
               Text("What is your opinion of Fluxstore?",style: TextStyle(
                   color: Color(0xff1D1F22),
